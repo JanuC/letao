@@ -93,8 +93,6 @@ ul {
 }
 
 .lt_main {
-  height: 1000px;
-  background-color: pink;
   padding-top: 50px;
   padding-left: 180px;
   transition: all 1s;
@@ -126,4 +124,9 @@ ul {
 
 .mt_20 {
   margin-top: 20px;
+}
+.echarts_1,
+.echarts_2 {
+  width: 48%;
+  height: 400px;
 }
