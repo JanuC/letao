@@ -121,7 +121,7 @@
       <!-- 模态框主结构 -->
         <div class="modal-dialog modal-sm">
           <div class="modal-content">
-            <form>
+            <form id="form">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
               <h4 class="modal-title">添加分类</h4>
@@ -171,7 +171,7 @@
         <td>{{ i + 1 + (page - 1) * size }}</td>
         <td>{{ v.categoryName }}</td>
         <td>{{ v.brandName }}</td>
-        <td><img src="{{ v.brandLogo }}"></td>
+        <td><img src="{{ v.brandLogo }}" width="100"></td>
     </tr>
     {{ /each }}
   </script>
