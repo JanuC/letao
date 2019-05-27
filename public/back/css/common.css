@@ -93,6 +93,7 @@ ul {
 }
 
 .lt_main {
+  height: 1000px;
   padding-top: 50px;
   padding-left: 180px;
   transition: all 1s;
