@@ -138,3 +138,8 @@ ul {
   /* 表格垂直居中 */
   vertical-align: middle;
 }
+
+
+.mb_20 {
+  margin-bottom: 20px;
+}
