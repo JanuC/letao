@@ -100,6 +100,9 @@ $(function() {
     render();
     // 清空输入框
     $('.search_input').val('');
+
+    // 添加跳转
+    location.href = "searchList.html?key=" + val;
   })
 
 
