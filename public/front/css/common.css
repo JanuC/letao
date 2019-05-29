@@ -105,3 +105,51 @@ img {
   /* 子元素时定位布局的,父元素要加定位 */
   position: relative;
 }
+
+
+
+/* 公用的搜索框样式 */
+.lt_search {
+  padding: 10px;
+  position: relative;
+
+}
+.lt_search .search_input {
+  height: 34px;
+  font-size: 12px;
+  margin: 0;
+  padding: 0 15px;
+  line-height: 34px;
+  border: 1px solid #007AFF;
+  border-radius: 5px;
+  padding-right: 55px;
+}
+.lt_search .search_btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+/* 公用的产品样式 */
+/* 产品样式 */
+.lt_product {
+  padding: 10px;
+}
+.lt_product_item {
+  float: left;
+  width: 48%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.lt_product_item:nth-child(odd) {
+  margin-right: 4%;
+}
+.lt_product_item .price {
+  color: red;
+}
+.lt_product_item .oldPrice {
+  text-decoration: line-through;
+}
