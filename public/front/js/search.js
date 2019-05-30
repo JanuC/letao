@@ -74,7 +74,7 @@ $(function() {
   $('.search_btn').click(function() {
     var val = $('.search_input').val().trim();
     if(val === "") {
-      alert('请输入搜索关键字');
+      mui.toast("请输入搜索内容");
     }
     // 获取数组
     arr = getHistory();
