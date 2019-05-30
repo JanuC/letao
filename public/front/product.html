@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- 视口存在目的: 早期手机屏幕很小,为了能够查看pc网页
+                    默认宽度980px,可以进行缩放
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>乐淘商城</title>
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <!-- 引入 font-awesome 字体图标库 -->
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/product.css">
+</head>
+<body>
+  
+  <!-- 全屏容器 -->
+  <div class="lt_container">
+
+    <!-- 乐淘头部 -->
+    <div class="lt_header">
+
+      <a href="javascript: history.back();" class="ico-left"><i class="mui-icon mui-icon-back"></i></a>
+
+      <h3>商品详情</h3>
+
+      <a href="javascript: location.reload()" class="ico-right"><i class="mui-icon mui-icon-reload"></i></a>
+
+    </div>
+
+
+
+    <!-- 乐淘主体 -->
+    <div class="lt_main">
+      <div class="mui-scroll-wrapper">
+          <div class="mui-scroll">
+            
+            <!-- 轮播图 -->
+            <div class="mui-slider">
+                <!-- 图片容器 -->
+                <div class="mui-slider-group mui-slider-loop">
+                  <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="/mobile/images/detail.jpg" /></a></div>
+                  <div class="mui-slider-item"><a href="#"><img src="/mobile/images/detail.jpg" /></a></div>
+                  <div class="mui-slider-item"><a href="#"><img src="/mobile/images/detail.jpg" /></a></div>
+                  <div class="mui-slider-item"><a href="#"><img src="/mobile/images/detail.jpg" /></a></div>
+                  <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="/mobile/images/detail.jpg" /></a></div>
+
+                </div>
+                <!-- 小圆点 -->
+                <div class="mui-slider-indicator">
+                    <div class="mui-indicator mui-active"></div>
+                    <div class="mui-indicator"></div>
+                    <div class="mui-indicator"></div>
+ 
+                </div>
+            </div>
+
+            <!-- 商品名 -->
+            <div class="lt_proName">
+              <strong>Sport飓风 Nike Kwazi 休闲运动鞋男 844839-002-001-100-400</strong>
+            </div>
+
+            <!-- 价格 -->
+            <div class="lt_price">
+              价格:
+              <span class="price">¥99.8</span>
+              <span class="oldPrice">¥997</span>
+            </div>
+
+            <!-- 尺码 -->
+            <div class="lt_size">
+              尺码:
+              <span>11</span>
+              <span>11</span>
+              <span>11</span>
+              <span>11</span>
+              <span>11</span>
+              <span>11</span>
+              <span>11</span>
+              <span>11</span>
+              <span>11</span>
+              <span>11</span>
+              <span>11</span>
+              <span>11</span>
+              <span>11</span>
+              <span>11</span>
+              <span>11</span>
+            </div>
+
+
+
+          </div>
+      </div>
+    </div>
+
+
+
+    <!-- 乐淘底部 -->
+    <div class="lt_go_cart">
+      <a href="#" class="mui-pull-left">前往购物车</a>
+      <div class="mui-pull-right">
+          <button class="mui-btn mui-btn-danger ">加入购物车</button>
+          <button class="mui-btn mui-btn-warning">立即购买</button>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <script src="./lib/mui/js/mui.js"></script>
+  <script src="./lib/zepto/zepto.min.js"></script>
+  <script src="./js/common.js"></script>
+</body>
+</html>
