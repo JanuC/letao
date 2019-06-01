@@ -1,0 +1,25 @@
+
+
+.lt_main a img {
+  width: 42px;
+  height: 42px;
+}
+.mui-table-view-cell {
+  position: relative;
+}
+.user_message {
+  display: inline-block;
+  position: absolute;
+  left: 65px;
+  top: 12px;
+}
+.user_message p:first-child {
+  color: #000;
+  font-size: 16px;
+}
+
+.btn_logout {
+  width: 96%;
+  height: 40px;
+  margin: 10px 2%;
+}

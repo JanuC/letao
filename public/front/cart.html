@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- 视口存在目的: 早期手机屏幕很小,为了能够查看pc网页
+                    默认宽度980px,可以进行缩放
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>乐淘商城</title>
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <!-- 引入 font-awesome 字体图标库 -->
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/cart.css">
+</head>
+<body>
+  
+  <!-- 全屏容器 -->
+  <div class="lt_container">
+
+    <!-- 乐淘头部 -->
+    <div class="lt_header">
+
+      <a href="javascript:history.back();" class="ico-left"><i class="mui-icon mui-icon-back"></i></a>
+
+      <h3>购物车</h3>
+
+    </div>
+
+
+
+    <!-- 乐淘主体 -->
+    <div class="lt_main">
+      <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+            <div class="mui-content">
+              
+             <!-- 挖个坑 -->
+        
+
+
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- 乐淘底部 -->
+    <div class="lt_footer">
+      <ul>
+        <li>
+          <a href="index.html">
+            <i class="fa fa-home"></i>
+            <p>首页</p>
+          </a>
+        </li>
+        <li>
+            <a href="category.html">
+              <i class="fa fa-bars"></i>
+              <p>分类页</p>
+            </a>
+        </li>
+        <li>
+            <a href="cart.html" class="current">
+              <i class="fa fa-shopping-cart" ></i>
+              <p>购物车</p>
+            </a>
+        </li>
+        <li>
+            <a href="user.html"  >
+              <i class="fa fa-user"></i>
+              <p>用户中心</p>
+            </a>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <script type="text/html" id="tpl">
+    
+      <ul class="mui-table-view">
+        {{ each info v i }}
+          <li class="mui-table-view-cell cart_item">
+            <div class="mui-slider-right mui-disabled" data-id="{{ v.id }}">
+              <a class="mui-btn mui-btn-primary mui-icon mui-icon-compose btn_update"></a>
+              <a class="mui-btn mui-btn-red mui-icon mui-icon-trash"></a>
+            </div>
+            <div class="mui-slider-handle ">
+              <div class="mui_table_cell">
+                <div class="cart_left">
+                  <img src="/mobile/images/detail.jpg" alt="">
+                  <input type="checkbox">
+                </div>
+                <div class="cart_info">
+                    <p class="pro_name mui-ellipsis-2">
+                     {{ v.proName }}
+                    </p>
+                    <p>
+                      <span class="price">¥{{ v.price }}</span>
+                      <span class="oldPrice">¥{{ v.oldPrice }}</span>
+                      <span class="mui-pull-right">{{ v.num }}双</span>
+                    </p>
+                    <p>
+                      鞋码: {{ v.size }}
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </li> 
+          {{ /each }}
+        </ul>
+    
+    
+    </script>
+
+
+
+
+
+
+  <script src="./lib/mui/js/mui.js"></script>
+  <script src="./lib/zepto/zepto.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/cart.js"></script>
+</body>
+</html>
